@@ -3,6 +3,9 @@ import 'dart:convert' as convert;
 
 typedef Future<String> OnRequest(io.HttpRequest request);
 
+/**
+ * create an http server
+ */
 Future<io.HttpServer> createServer(
     dynamic address, int port, OnRequest onRequest) async {
   final server = await io.HttpServer.bind(address, port);
