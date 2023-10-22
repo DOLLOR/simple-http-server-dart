@@ -24,5 +24,5 @@ final httpServer.OnRequest onRequest = (request) async {
   print(request.method);
   print(request.uri);
   print('post body: ${postBody}');
-  return httpServer.ResponseResult(data: 'dart http server ok: ${postBody}');
+  return httpServer.ResponseResult(data: httpServer.stringToU8('dart http server ok: ${postBody}'));
 };
