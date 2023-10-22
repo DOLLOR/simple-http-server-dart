@@ -1,6 +1,7 @@
 import './httpServer.dart' as httpServer;
 
-main() async {
+// dart run main.dart
+void main() async {
   const port = 9301;
   await httpServer.createServer(port: port, onRequest: onRequest);
 }
